@@ -1,0 +1,272 @@
+/*
+Theme Name: Roblox TwentyEleven
+Author: Roblox
+Description: a child theme, based on the 2011 theme for WordPress
+Author URI: http://wordpress.org/
+Template: twentyeleven
+*/
+ 
+@import url(../../../blog_subdomain/wp-content/themes/twentyeleven/style.css);
+@import url(../../../blog_subdomain/wp-content/themes/roblox/css/tinymce.css);
+
+
+body {
+    padding: 0 0em;
+}
+body, input, textarea {
+    color: #373737;
+    font: 300 15px/1.625 Arial,sans-serif;
+}
+
+
+
+/* UTILITIES MENU */
+#menuUtilities {
+	background-color: #383838;
+	min-width: 900px;
+	overflow:auto;
+}
+#menuUtilities ul {
+	float: right;
+	list-style-type: none;
+	margin: 0 16px 0 0;
+}
+#menuUtilities ul li {
+	float: left;
+	margin:0 1px;
+    text-align: center;
+}
+#menuUtilities ul li:hover a,
+#menuUtilities ul li.active a {
+	background-color:#333;
+	background-image:url("../../../blog_subdomain/wp-content/themes/roblox/images/bg_utilities.png");
+	color:#fff;
+}
+#menuUtilities .menu-utilities-container {
+	margin: 0 auto;
+	width:900px;
+}
+
+#menuUtilities ul li a {
+    color: #B2B2B2;
+	display:block;
+    font-size: 10px;
+	font-weight:normal;
+	height: 22px;
+	line-height: 16px;
+	margin-left:0px;
+	padding: 0 7px;
+}
+#menuUtilities ul li a:hover {
+	color:#fff;
+	text-decoration:none;
+}
+/* END UTILITIES MENU */
+
+
+
+
+#page {
+    margin: 84px auto 0;
+    width: 900px;
+}
+#branding img {
+  margin-top: -84px;
+}
+
+#main {
+    padding: 0em 0 0;
+}
+
+
+#primary {
+	margin: 0 0 0 0;
+	padding-top: 16px;	
+	width:700px;
+}
+
+#primary #content {
+    margin: 0 30px;
+    width: auto;
+}
+
+
+.entry-title,
+.entry-title a {
+	color:#DD0000;
+    font-size: 44px;
+    line-height: 1em;
+    padding-bottom: 0.1em;
+    text-decoration: none;
+}
+.entry-title a:hover,
+.entry-title a:focus,
+.entry-title a:active {
+	color: #FF0000;
+    text-decoration: underline;
+}
+.entry-title {
+	padding-botttom: 0.2em;
+	line-height: 1.1em;
+}
+.entry-meta a {
+	color:#666;
+}
+.entry-content, .entry-summary {
+    padding: 1em 0 0;
+}
+
+.entry-content img[class*="align"], 
+.entry-content img[class*="wp-image-"], 
+#content .gallery .gallery-icon img {
+	margin-bottom: 8px;
+    margin-top: 0;
+}
+
+
+.paged #nav-above,
+#nav-single{
+    margin-top: 16px;
+}
+
+
+a {
+  color: #1177DD
+}
+
+
+
+
+
+
+#main #secondary {
+	background-color:#333;
+	color:#fff;
+	float:right;
+	margin:0px;
+    margin-right: 0%;
+    padding: 12px;
+    width: 175px;
+}
+.widget-title,
+#secondary a {
+	color:#fff;
+}
+#secondary .widget ul {
+    list-style: square inside none;
+}
+
+
+#branding {
+    border-top: 0px;
+    padding-bottom: 0px;
+    position: relative;
+    z-index: 2;
+}
+
+
+#site-title,
+#site-description {
+	display:none;
+}
+
+#sidebarLinks {
+	list-style:none;
+	margin: 0;
+}
+
+#sidebarLinks li a {
+}
+
+#site-title {
+    padding: 0;
+}
+
+#site-description {
+    margin: 0 270px 0 0;
+}
+
+
+
+
+.textwidget ul#sidebarLinks {
+	list-style: none;
+}
+.textwidget ul#sidebarLinks a {
+	background-repeat:no-repeat;
+	display:block;
+	height:28px;
+    background-position: 0 0;
+    padding-left: 30px;
+    padding-top: 2px;
+}
+
+
+.textwidget ul#sidebarLinks li#sidebarLinkFacebook a {
+	background-image:url("../../../blog_subdomain/wp-content/themes/roblox/images/sidebarlinks/facebook.png");
+}
+.textwidget ul#sidebarLinks li#sidebarLinkYoutube a {
+	background-image:url("../../../blog_subdomain/wp-content/themes/roblox/images/sidebarlinks/youtube.png");
+}
+.textwidget ul#sidebarLinks li#sidebarLinkTwitter a {
+	background-image:url("../../../blog_subdomain/wp-content/themes/roblox/images/sidebarlinks/twitter.png");
+}
+.textwidget ul#sidebarLinks li#sidebarLinkRss a {
+	background-image:url("../../../blog_subdomain/wp-content/themes/roblox/images/sidebarlinks/rss.png");
+}
+
+/* SEARCH BOX IN SIDE BAR */
+#secondary input#s {
+  border-radius:0;
+  background-image:url("../../../blog_subdomain/wp-content/themes/roblox/images/search.png");
+  border: 1px solid #BBB;
+  color:#fff;
+}
+
+/* Poll in right nav */
+#secondary .pds-box {
+	background: none repeat scroll 0 0 #FFFFFF !important;
+	border: 2px solid #999999 !important;
+	border-radius: 6px 6px 6px 6px !important;
+	font-size: 14px !important;
+	width: 170px !important;
+}
+
+#secondary .pds-question-top {
+    color: #DD0000 !important;
+    font-size: 16px !important;
+    padding: 0 0 10px !important;
+}
+
+#secondary .pds-input-label {
+  padding: 2px 0 0 !important;
+}
+
+#secondary .pds-vote-button {
+  font-size: 14px !important;
+  background: #d00 !important;
+  color: #fff !important;
+  padding: 3px 25px !important;
+}
+
+#secondary .pds-answer-feedback-bar {
+  background: none repeat scroll 0 0 #DD0000 !important;
+  height: 6px !important;
+}
+
+/* END Poll in right nav */
+
+
+
+/* FOOTER LINKS */
+#site-generator ul {
+	list-style-type:none;
+}
+#site-generator ul li {
+	border-right:solid 1px grey;
+	display:inline;
+	padding:2px 5px;
+}
+#site-generator ul li:last-child {
+	border-right:none;
+}

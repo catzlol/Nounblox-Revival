@@ -1,0 +1,29 @@
+<roblox!‰ÿ
+
+                META$   "       ð      ExplicitAutoJoints   trueINST          ð    	   Accessory        INST          ð   
+   Attachment       INST          ð      Camera       
+INST          ð      Part       INST          ð
+      SpecialMesh       INST          ð
+      StringValue       PROPI   I       ð       AttachmentPoint   €?­:2JUZ'­:² Àîèî¥JUZ§íèî% Ày¬|w¯ð ydPROP"           ð       AttributesSerialize    PROP$   "       ð       Name   MeshPartAccessoryPROP          ð       Tags    PROP"           ð      AttributesSerialize    PROP@   @       ð      CFrame   €?­:2JUZ'­:² Àîèî¥JUZ§íèî% Ày¬|w¯ð ydPROP           ð      Name
+   HatAttachmentPROP          ð      Tags    PROP          ð      Visible PROP"           ð      AttributesSerialize    PROPB   @       ð1      CFrame 7R?lIe>c¿   €Lyk?áÈ>÷?Íó¤¾#\A?Ç ¥ª­ø€#z¨PROP          ð   
+   CameraSubject   PROP          ð   
+   CameraType    PROP          ð	      FieldOfView…  PROP          ð      Focus~u´ù~Ã™Ð~ˆyðPROP          ð   
+   HeadLockedPROP          ð   	   HeadScale   PROP"           ð      Name   ThumbnailCameraPROP          ð      Tags    PROP          ð      Anchored PROP"           ð      AttributesSerialize    PROP          ð   
+   BackParamA~  PROP          ð   
+   BackParamB~   PROP          ð	      BackSurface    PROP          ð      BackSurfaceInput    PROP          ð
+      BottomParamA~  PROP          ð
+      BottomParamB~   PROP          ð   
+   BottomSurface    PROP!          ð      BottomSurfaceInput    PROP?   @       ð
+      CFrame {:ø¾    ¨æ_? 1  € @¨æ_¿ ð|:ø¾t;Ÿ~  dv½ÛPROP          ð   
+   CanCollidePROP          ð   
+   CastShadowPROP          ð      CollisionGroupId    PROP          ð      Color3uint8£¢¥PROP$   "       ð      CustomPhysicalProperties PROP          ð	      FrontParamA~  PROP          ð	      FrontParamB~   PROP          ð
+      FrontSurface    PROP           ð      FrontSurfaceInput    PROP          ð   
+   LeftParamA~  PROP          ð   
+   LeftParamB~   PROP          ð	      LeftSurface    PROP          ð      LeftSurfaceInput    PROP          ð      LockedPROP          ð      Massless PROP          ð      Material   PROP          ð      Name   HandlePROP          ð	      Reflectance    PROP          ð	      RightParamA~  PROP          ð	      RightParamB~   PROP          ð
+      RightSurface    PROP           ð      RightSurfaceInput    PROP          ð
+      RootPriority    PROP"           ð      RotVelocity            PROP          ð      Tags    PROP          ð   	   TopParamA~  PROP          ð   	   TopParamB~   PROP          ð   
+   TopSurface    PROP          ð
+      TopSurfaceInput    PROP          ð
+      Transparency    PROP          ð      Velocity            PROP          ð   
+   formFactorRaw   PROP          ð      shape   PROP          ð
+      size         PROP"           ð      AttributesSerialize    PROP          @    LODX   PROP          @    LODY   PROP,   *       ð      MeshId   rbxassetid://4819720316PROP          ð      MeshType   PROP          @    ðName   SpecialMeshPROP          ð      Offset            PROP          ð      Scale         PROP          @    Tags    PROP/   -       ð   	   TextureId   rbxassetid://4819722776PROP"           ð      VertexColor         PROP"           ð      AttributesSerialize    PROP&   $       ð      Name   AvatarPartScaleTypePROP          ð      Tags    PROP          @    ðValue   ClassicPRNT   5       ?   n	 `   END     	       </roblox>

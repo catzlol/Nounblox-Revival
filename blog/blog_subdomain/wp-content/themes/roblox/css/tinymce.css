@@ -1,0 +1,17 @@
+.imageList {
+	list-style:none;
+	margin: 0;	
+}
+
+.imageList li {
+    border-bottom: 1px solid #DDDDDD;
+    margin: 1em 0 8px;
+    overflow: auto;
+    padding-bottom: 8px;
+}
+
+.imageList li img {
+    float: left;
+    margin-right: 16px;
+    width: 140px;
+}

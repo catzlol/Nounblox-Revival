@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\nounblox]
+"URL Protocol"=""
+[HKEY_CLASSES_ROOT\nounblox\shell]
+[HKEY_CLASSES_ROOT\nounblox\shell\open]
+[HKEY_CLASSES_ROOT\nounblox\shell\open\command] 
+@="\"C:\\nounblox\\nounlauncher.exe\" \"%1\""

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2.0">
+  <xs:import namespace="http://www.w3.org/2005/05/xmlmime" schemaLocation="http://www.w3.org/2005/05/xmlmime" />
+  <xs:annotation>
+    <xs:documentation>***************************** Version 5.1 types ***********************************************</xs:documentation>
+  </xs:annotation>
+  <xs:attributeGroup name="Referent">
+    <xs:attribute name="referent" type="xs:ID" />
+  </xs:attributeGroup>
+  <xs:attributeGroup name="Property">
+    <xs:attribute name="name" type="xs:NMTOKEN" use="required" />
+  </xs:attributeGroup>
+  <xs:group name="PropertyGroup">
+    <xs:choice>
+      <xs:element name="string" nillable="true">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attributeGroup ref="Property" />
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProtectedString" nillable="true">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attributeGroup ref="Property" />
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="int" nillable="true">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:int">
+              <xs:attributeGroup ref="Property" />
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="float" nillable="true">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:float">
+              <xs:attributeGroup ref="Property" />
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="double" nillable="true">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:double">
+              <xs:attributeGroup ref="Property" />
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="bool" nillable="true">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:boolean">
+              <xs:attributeGroup ref="Property" />
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="token" nillable="true">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:NMTOKEN">
+              <xs:attributeGroup ref="Property" />
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="tokens" nillable="true">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:NMTOKENS">
+              <xs:attributeGroup ref="Property" />
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="enum" nillable="true">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:unsignedShort">
+              <xs:attributeGroup ref="Property" />
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Ref">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:IDREF">
+              <xs:attributeGroup ref="Property" />
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Refs">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:IDREFS">
+              <xs:attributeGroup ref="Property" />
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Vector3" nillable="true">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="X" nillable="true">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:float">
+                    <xs:attributeGroup ref="Referent" />
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Y" nillable="true">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:float">
+                    <xs:attributeGroup ref="Referent" />
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Z" nillable="true">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:float">
+                    <xs:attributeGroup ref="Referent" />
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+          <xs:attributeGroup ref="Property" />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CoordinateFrame" nillable="true">
+        <xs:complexType>
+          <xs:sequence minOccurs="0">
+            <xs:element name="X" nillable="true">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:float">
+                    <xs:attributeGroup ref="Referent" />
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Y" nillable="true">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:float">
+                    <xs:attributeGroup ref="Referent" />
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Z" nillable="true">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:float">
+                    <xs:attributeGroup ref="Referent" />
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="R00" nillable="true">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:float">
+                    <xs:attributeGroup ref="Referent" />
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="R01" nillable="true">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:float">
+                    <xs:attributeGroup ref="Referent" />
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="R02" nillable="true">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:float">
+                    <xs:attributeGroup ref="Referent" />
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="R10" nillable="true">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:float">
+                    <xs:attributeGroup ref="Referent" />
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="R11" nillable="true">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:float">
+                    <xs:attributeGroup ref="Referent" />
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="R12" nillable="true">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:float">
+                    <xs:attributeGroup ref="Referent" />
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="R20" nillable="true">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:float">
+                    <xs:attributeGroup ref="Referent" />
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="R21" nillable="true">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:float">
+                    <xs:attributeGroup ref="Referent" />
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="R22" nillable="true">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:float">
+                    <xs:attributeGroup ref="Referent" />
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+          <xs:attributeGroup ref="Property" />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Color3" nillable="true">
+        <xs:complexType mixed="true">
+          <xs:sequence minOccurs="0">
+            <xs:element name="R">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:float">
+                    <xs:attributeGroup ref="Referent" />
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="G">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:float">
+                    <xs:attributeGroup ref="Referent" />
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="B">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:float">
+                    <xs:attributeGroup ref="Referent" />
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+          <xs:attributeGroup ref="Property" />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Complex" nillable="true">
+        <xs:complexType>
+          <xs:complexContent>
+            <xs:extension base="PropertyContainer" />
+          </xs:complexContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Content" nillable="true">
+        <xs:complexType mixed="true">
+          <xs:choice minOccurs="0">
+            <xs:element name="url" type="xs:string" />
+            <xs:element name="hash" type="xs:NMTOKEN" />
+            <xs:element name="null" />
+            <xs:element name="binary">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:base64Binary">
+                    <xs:attribute ref="xmime:contentType" />
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+          <xs:attribute name="mimeType" type="xs:string" />
+          <xs:attributeGroup ref="Property" />
+        </xs:complexType>
+      </xs:element>
+    </xs:choice>
+  </xs:group>
+  <xs:complexType name="PropertyContainer">
+    <xs:sequence minOccurs="0" maxOccurs="unbounded">
+      <xs:group ref="PropertyGroup" />
+    </xs:sequence>
+    <xs:attributeGroup ref="Property" />
+  </xs:complexType>
+  <xs:complexType name="ItemType">
+    <xs:sequence>
+      <xs:element name="Properties">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:group ref="PropertyGroup" />
+            <xs:element name="Feature" type="PropertyContainer" />
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+      <xs:element ref="Item" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="class" type="xs:NMTOKEN" use="required" />
+    <xs:attributeGroup ref="Referent" />
+  </xs:complexType>
+  <xs:element name="Item">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="ItemType" />
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:documentation>***************************** root ***********************************************</xs:documentation>
+  </xs:annotation>
+  <xs:element name="roblox">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Item" />
+        <xs:element name="External" type="xs:ID">
+          <xs:annotation>
+            <xs:documentation>Entity that is referenced within this document but whose data aren't being saved. The XML reader will attempt to bind this entity with a pre-existing object in the target.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="DeleteItem" type="xs:ID">
+          <xs:annotation>
+            <xs:documentation>An item that should be deleted from the target. (Used for undo/redo)</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:choice>
+      <xs:attribute name="version" type="xs:int" use="optional" default="3" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,287 @@
+/*
+Theme Name: Earth
+Theme URI: http://www.2yi.net
+Description: Simple two column wordpress theme by 2yi.net
+Version: 1.0
+Author: Your Index
+*/
+
+/************************************************************
+********* General Styles *******************************
+************************************************************/
+body {
+padding: 0;
+margin: 0;
+background: #DFDBC3 url('/blog/wp-content/themes/earth-10/images/body-bg.gif') top center repeat-y;
+font-size: 1em;
+font-family: Verdana, Arial, 'Times New Roman';
+color: #000;
+}
+
+#container {
+width: 792px;
+font-size: 0.8em;
+margin: auto;
+
+}
+
+* html #container{
+padding-left: 1px;
+}
+
+h2 {
+margin: 0;
+}
+
+a {
+color: #39170B;
+}
+
+a:hover {
+text-decoration: none;
+}
+
+.clear {
+clear: both;
+}
+
+/************************************************************
+********* Header Styles *******************************
+************************************************************/
+
+#header {
+background: #816852 url('/blog/wp-content/themes/earth-10/images/NewBlogBanner.png') top center no-repeat;
+height: 124px;
+text-align: center
+}
+
+#header h1, #header h2 {
+margin: 0;
+padding: 0;
+font-size: 1em;
+color: #39170B;
+}
+
+#header h1 a {
+color: #39170B;
+font-size: 2em;
+text-decoration: none;
+display: block;
+padding: 3px 0 0 5px;
+}
+
+#header h1 a:hover{
+color: #fff;
+font-size: 2em;
+text-decoration: none;
+display: block;
+padding: 3px 0 0 5px;
+}
+
+#header h2 {
+padding: 5px 0 0 5px;
+}
+
+#headerlogo {
+	margin: 0;
+	width: 293px;
+	border: none;
+	padding: 5px 5px 5px 5px;
+}
+
+
+/************************************************************
+********* Content Styles *******************************
+************************************************************/
+
+#content  {
+width: 502px;
+padding: 30px 30px;
+float: left;
+}
+
+#content h2 {
+margin: 0;
+font-size: 1.3em;
+background: url('/blog/wp-content/themes/earth-10/images/icon.gif') 2px 14px no-repeat;
+color: #39170B;
+padding: 10px 0 0 20px;
+}
+
+#content h2 a {
+text-decoration: none;
+}
+
+#content h2 a:hover {
+text-decoration: none;
+color: #8F8759;
+}
+
+#content h3 {
+font-size: 1em;
+}
+
+#content .posted-by {
+float: right;
+display: block;
+padding: 15px 0 0 25px;
+font-size: 0.7em;
+font-weight: normal;
+width: 150px;
+}
+
+#content .post-footer {
+font-size: 8pt;
+border-top: 1px solid #39170B;
+border-bottom: 1px solid #39170B;
+color: #777777;
+background: #D4CEAE;
+padding: 3px 10px 3px 10px;
+}
+
+#content .post-footer a {
+font-size: 8pt;
+font-weight: normal;
+color: #777777;
+}
+
+#content .post-footer a:hover {
+font-size: 8pt;
+font-weight: normal;
+color: #777777;
+text-decoration: underline;
+font-style: normal;
+}
+
+#content .post-footer .meta {
+display: block;
+float: left;
+width: 370px;
+}
+
+#content .post-footer .feedback {
+float: right;
+}
+
+#content blockquote {
+background: #D4CEAE;
+padding: 1px 15px;
+border: 1px solid #39170B;
+border-width: 1px 1px 1px 5px;
+}
+
+#content a img {
+float: left;
+padding: 1px;
+background: #fff;
+border: 2px solid #bbd17e;
+margin: 8px 12px 8px 0;
+}
+
+#content a:hover img {
+border-color: #4a5f12;
+}
+
+#content a {
+color: #39170B;
+font-weight: bold;
+text-decoration: none;
+}
+
+#content a:hover {
+text-decoration: underline;
+}
+
+#content a:visited {
+color: #39170B;
+}
+
+/************************************************************
+********* Sidebar Styles *********************************
+************************************************************/
+
+#sidebar {
+float: left;
+width: 230px;
+margin-bottom: 85px;
+}
+
+#sidebar h2 {
+background: #816852 url('/blog/wp-content/themes/earth-10/images/sidebar-h2.gif') center bottom no-repeat;
+text-align: right;
+font-size: 1.2em;
+padding: 4px 25px 5px 0;
+color: #39170B;
+margin: 10px 0;
+}
+
+#sidebar ul {
+margin: 0;
+padding: 0;
+list-style: none;
+color: #102536;
+}
+
+#sidebar li{
+list-style: none;
+}
+
+#sidebar ul li{
+list-style: none;
+}
+
+#sidebar ul ul li{
+
+background: url(https:/voblox.ga/blog/wp-content/themes/earth-10/images/star.gif) 5px 5px no-repeat;
+padding-left: 16px;
+
+}
+
+#sidebar ul li ul{
+padding: 0 0 0 20px;
+}
+
+#sidebar ul li ul li a {
+color: #102536;
+text-decoration: none;
+}
+
+#sidebar ul li ul li a:hover {
+color: #102536;
+text-decoration: underline;
+}
+
+#sidebar ul li ul li ul {
+padding: 2px 0 2px 20px;
+}
+
+#searchform {
+padding: 0 20px 0 20px;
+}
+
+/************************************************************
+********* Footer Styles *********************************
+************************************************************/
+
+#footer {
+clear: both;
+background: #816852 url('/blog/wp-content/themes/earth-10/images/footer.gif') repeat-x;
+font-size: 0.9em;
+height: 27px;
+}
+
+#footer * {
+color: #fff;
+}
+
+#footer p {
+float: left;
+margin: 0;
+padding: 6px 5px 0 5px;
+}
+
+#footer p.rights-reserved {
+float: right;
+width: 215px;
+text-align: center;
+}
